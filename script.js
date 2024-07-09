@@ -43,12 +43,13 @@ let voiceSelect = document.querySelector("select");
     });
 
     
+    
+    let Content = document.querySelector("textarea");
+    let path = ["./Images/play.png","./Images/pause.png","./Images/resum.png"]
     let imgs = document.querySelector("img");
-        imgs.src = "./images/play.png" 
+        imgs.src = path[0]; 
     let P = document.querySelector("p") 
         P.innerHTML = "Listen";
-    let Content = document.querySelector("textarea");
-    let path = ["./images/play.png","./images/pause.png","./images/resum.png"]
 
     /*******************Button Events play,pause,resume ***********/
     document.querySelector("button").addEventListener("click", (e)=>{
